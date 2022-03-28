@@ -41,7 +41,9 @@ function getRange(hexColor) {
 
 
 function generateScale(hexColor, numberOfColors) {
-    return chroma.scale(getRange(hexColor)).mode("lab").colors(numberOfColors)
+    return chroma.scale(getRange(hexColor))
+    .mode("lab")
+    .colors(numberOfColors)
 }
 
 
